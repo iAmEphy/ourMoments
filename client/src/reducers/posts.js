@@ -14,10 +14,10 @@ export default (posts = [], action) => {
       return [...posts, action.payload];
     //map print the post array.  if post.id is equal to payload, then itll update new value
     case LIKE:
-      return posts.map((post) => (post._id === action.payload._id ? action.payload : post));
     case UPDATE:
       return posts.map((post) => (post._id === action.payload._id ? action.payload : post));
-
+    
+    //remove if post id doesnt equal the payload data
     case DELETE:
       return posts.filter((post) => post._id !== action.payload);
     default:

@@ -37,11 +37,11 @@ const Form = ({ currentId, setCurrentId }) => {
   const clear = () => {
     setCurrentId(0);
     setPostData({ 
-    creator: '', 
-    title: '', 
-    message: '', 
-    tags: '', 
-    selectedFile: '' });
+      creator: '', 
+      title: '', 
+      message: '', 
+      tags: '', 
+      selectedFile: '' });
   };
 
   //handler function. 
